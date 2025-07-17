@@ -1,5 +1,6 @@
 import random
 import numpy as np
+import matplotlib.pyplot as plt
 
 # what do we want our NN to predict?
 
@@ -45,8 +46,8 @@ class NeuralNetwork():
 
 if __name__ == "__main__":
     nn = NeuralNetwork(3, 5)
-    print("Neural Network initialized with", nn.numLayers, "layers and", nn.numNeurons, "neurons per layer.")
-    print("Layers structure:", nn.layers)
+    print(f"Neural Network initialized with {nn.numLayers} layers and {nn.numNeurons}neurons per layer.")
+    print(f"Layers structure: {nn.layers}")
     # Add more functionality as needed
     nn.weightInitialization()
     nn.
